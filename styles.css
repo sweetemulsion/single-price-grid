@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --cyan: #2AB2AF;
+  --bright-yellow: #C0DF34;
+  --light-grey: #E5EFF5;
+  --grey-blue: #98A6BD;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: var(--light-grey);
+}
+
+h3 {
+ font-family: 'Karla', sans-serif;
+ color:var(--light-grey);
+ font-weight: 700;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  color: var(--light-grey);
+}
+
+.container-fluid {
+  width: 40%;
+  margin: 200px auto;
+  /* padding: 3% 5%; */
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+/* Top section */
+.top-section {
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 25px 20px 25px 40px;
+}
+
+.top-section h1 {
+  color: var(--cyan);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.top-section h2 {
+  color: var(--bright-yellow);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.top-section p {
+  color: var(--grey-blue);
+  line-height: 1.5;
+}
+
+/* Bottom sections */
+
+.section-left {
+  background-color: #2a9c9a;
+  border-bottom-left-radius: 10px;
+  padding: 25px 20px 0 40px;
+}
+
+.section-left h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.section-left h2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.section-left p {
+  color: var(--light-grey);
+}
+
+
+button {
+  background-color: var(--bright-yellow);
+  color: var(--light-grey);
+  margin: 40px 0 40px;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+  border: none;
+}
+
+.section-right {
+  background-color: var(--cyan);
+  border-bottom-right-radius: 10px;
+  padding: 25px 20px 0 40px;
+}
+
+.section-right p {
+  line-height: 2.5;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.attribution  {
+  color: black;
+}
+
+@media (max-width: 992px) {
+
+  .section-left {
+    border-bottom-left-radius: 0;
+  }
+
+  .section-right {
+    border-bottom-left-radius: 10px;
+  }
+}
